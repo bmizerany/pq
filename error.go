@@ -37,6 +37,9 @@ func parseError(r *readBuf) *pgError {
 	return err
 }
 
+// Get the error field by its identification token. For a full list of
+// available tokens, see this guide:
+// http://www.postgresql.org/docs/current/static/protocol-error-fields.html
 func (err *pgError) Get(k byte) (v string) {
 	v, _ = err.c[k]
 	return
