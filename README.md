@@ -1,3 +1,6 @@
+**This project has been moved to https://github.com/lib/pq.** 
+This old repository is kept for backward compatibility purposes.
+
 # pq - A pure Go postgres driver for Go's database/sql package
 
 **This package is now deprecated. The up to date version is at
